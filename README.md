@@ -1,14 +1,16 @@
-# This is your [AngularAttack](https://www.angularattack.com) 2016 Repo
-
-This repo is the start of your AngularAttack 2016 entry. It contains the simple [Angular2 starter](https://angular.io/docs/ts/latest/quickstart.html) files.
-
-**DO NOT MAKE ANY CODE CHECKINS TO THIS REPOSITORY BEFORE THE COMPETITION OFFICIALLY BEGINS.**
-
-**DOING SO COULD DISQUALIFY YOU.**
+# This is an idea beeing developed by four developers for learning new technologies
 
 
-However, before the competition starts, there are some things we encourage you to do to get prepared for the competition.
+**Description**
 
+One stop shop for all your personal, professional and business social networks. Soon we will add recommendations, suggestions based on your friends/colleagues social network activities to the portal. And you will find some hidden fun activity too...
+
+
+**Instructions**
+click on tabs to sign in and related information will show up on dashboard. it might take couple of minutes to load the site for the first time.
+
+**Build With**
+angular 2; type script; visual studio code; twitter, FB, Yammer client SDKs and Rest APIs; http://thumbs.dreamstime.com/z/baby-boy-cartoon-crying-illustration-33231322.jpg; http://www.photovaco.com/wp-content/uploads/2011/08/free-photo-waterdrops-and-net-390.jpg, referred Pluralsight training material.
 
 ### Step 1) Get Your Local Environment setup
 
@@ -16,7 +18,7 @@ Clone this repo locally, and make sure all your team members have access to it.
 
 * Install the latest [Node / NPM](https://nodejs.org).
 
-* `git clone git@github.com:rumblex/angularattack2016-snaide.git`
+* `git clone git@github.com:rumblex/WilsonReddy/snaide.git`
 
 * `cd angularattack2016-snaide`
 
@@ -42,7 +44,8 @@ If you receive an error message `"You do not have permission to publish to snaid
 * `surge . --add omarvillavicencio@hotmail.com,robinliu@microsoft.com,v-lapedd@microsoft.com,wilg@microsoft.com`
 
 
-### Step 4) Wait til competition starts
+### Step 4) Wait til we start accepting pull requests
 
-It begins at exactly [May 14 at 00:00 UTC](https://www.wolframalpha.com/input/?i=May+14,+2016+0:00+UTC). Once the competition starts,   you can write over this project.
+we will announce date soon...
+
 
