@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+app/*.js
+app/*.map
+app/**/*.js
+app/**/*.js.map
+.vs
+/.vs/config
+/.vs/config/applicationhost.config

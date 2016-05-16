@@ -1,0 +1,16 @@
+﻿.bigimg {
+    background-image: url('app/assets/images/net2.jpg');
+}
+
+.row{
+    color: greenyellow;
+    font:bold;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-size:large
+}
+
+@keyframes blinker {  
+  30% { opacity: 0.0; }
+}

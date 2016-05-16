@@ -1,0 +1,65 @@
+﻿<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '693175194155426',
+            cookie: true,  // enable cookies to allow the server to access the session
+            xfbml: true,  // parse social plugins on this page
+            version: 'v2.5' // use graph api version 2.5
+        });
+    }
+
+</script>
+<div class="row">
+    <div class="col-sm-12" style="color:#fff; background-color:#286090; border-color:#204d74">
+        <h1>{{pageTitle}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <button class="btn btn-primary btn-md" (click)="fbLogin()">fb login</button>
+            <fb:login-button scope="public_profile,email" (onlogin)="checkLoginState()">
+            </fb:login-button>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your friends reacted to your actions!</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Liked your latest post: <span style="font-size:20px;">{{likePost}}</span></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Liked your latest share: <span style="font-size:20px;">{{likedShares}}</span></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Commented on your latest post: <span style="font-size:20px;">{{likedComments}}</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your friends actions</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Closest friends posted on your wall: <span style="font-size:20px;">{{postsOnWall}}</span></label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Recent messages: <span style="font-size:20px;">{{recentMsgs}}</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

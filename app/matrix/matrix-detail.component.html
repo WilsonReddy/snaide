@@ -1,0 +1,46 @@
+﻿<div class='panel panel-primary col-md-10' > <!-- *ngIf='matrix'> -->
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle + ': ' + matrix.matrixName }}
+    </div>
+    <div class='panel-body' style="color:black">
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3 text'>Name:</div>
+                    <div class='col-md-6 text'>{{matrix.matrixName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3 text'>Code:</div>
+                    <div class='col-md-6 text'>{{matrix.matrixCode}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3 text'>Description:</div>
+                    <div class='col-md-6 text blink_me'>{{matrix.description}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3 text'>Join Date:</div>
+                    <div class='col-md-6 text'>{{matrix.joinedDate}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3 text'>Price:</div>
+                    <div class='col-md-6 text'>{{matrix.price|currency:'USD':true}}</div>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <img class='center-block img-responsive'
+                     [style.width.px]='200'
+                     [style.margin.px]='2'
+                     [src]='matrix.imageUrl'
+                     [title]='matrix.matrixName'>
+            </div>
+        </div>
+    </div>
+    <div class='panel-footer'>
+        <div class="pull-right clearfix blink_me">
+            <a class='btn btn-default' (click)='onWelcom()' style='width:120px'>
+                I am in <i class='glyphicon glyphicon-chevron-right'></i>
+            </a>
+        </div>
+
+    </div>
+<!-- </div> -->

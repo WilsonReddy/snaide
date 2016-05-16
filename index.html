@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <base href="/">
+    <title>Social Network Aide Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" /> 
+    <link href="app/app.component.css" rel="stylesheet" />
+    <!-- Polyfill(s) for older browsers -->
+  <!--  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+      -->
+    
+      <!-- Auth0 Lock script -->
+    
+
+<!-- Setting the right viewport -->
+    
+
+    <script src="https://rumblex.s3.amazonaws.com/starter/es6-shim/es6-shim.min.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/zone.js/dist/zone.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/reflect-metadata/Reflect.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/systemjs/dist/system.src.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/rxjs/bundles/Rx.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/core/core.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/common/common.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/compiler/compiler.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/platform-browser/platform-browser.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
+    
+    <script data-app-id="P0te2H5GNZNzM2nO2jo3A" src="https://c64.assets-yammer.com/assets/platform_js_sdk.js"  crossorigin="anonymous"></script>
+    <script src="https://s0.assets-yammer.com/assets/platform_embed.js"></script>
+    <!--Facebook SDK-->
+    <script>
+          // Load the SDK asynchronously
+          (function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js";
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err);  });
+    </script>
+</head>
+<body>
+    <snaide-app>
+        <div>
+            <img src="app/assets/images/loading.jpg" />
+        </div>
+    </snaide-app>
+</body>
+</html>

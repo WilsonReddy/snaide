@@ -1,0 +1,25 @@
+﻿.panel-body{
+    background:black; 
+}
+
+.text{
+    color:snow;
+}
+.panel{
+    background:antiquewhite;
+}
+.panel-footer{
+    background:black;
+}
+.btn-default{
+    background:antiquewhite;
+  
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  30% { opacity: 0.0; }
+}
